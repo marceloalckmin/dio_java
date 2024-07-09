@@ -1,0 +1,28 @@
+Versionamento de Código:
+    - Surgiram pra resolver os problemas de desenvolvimento de projetos, já que a cada alteração uma pasta nova seria salva, o que é insustentável a longo prazo
+    Existem dois tipos:
+    - Centralizado: Um unico servidor salva todas as versões do projeto, onde os usuários se conectam e ganham acesso ás versões.
+    - Distribuído: Cada repositório é duplicado localmente a cada clonagem feita, então caso o servidor saia do ar isso não afeta o acesso ao código.
+
+Git:
+- É o sistema de versionamento de código mais utilizado hoje em dia
+- Fluxo básico Git:
+    O comando git clone é usado para clonar um repositório git existente pra um diretorio, uma pasta localmente
+    o comando git commit é usado pra gravar as alterações feitas no repositório após a clonagem
+    O comando git pull é usado pra "puxar" as alterações do repositório remoto para o repositório local
+    O comando git push é usado pra "empurrar" as alterações do repositório local para o repositório remoto
+
+GitHub:
+- É uma plataforma de hospedagem de código para controle de versão com Git
+- Age como o servidor que hospeda o repositório remoto
+- Autenticação com token: 
+    Ao clonar um repositório remoto, caso não tenha acesso é necessaria uma autenticação pra realizar a clonagem e ter acesso ao repositório.
+    Isso pode ser feito de algumas formas, uma delas é esse token, esse token é gerado pelo dono do repositório e concede acesso ao repositório, que é utilizado no bash do git 
+    quando usamos o git clone
+- Autenticação com SSH:
+    Chaves SSH funcionam em pares, uma publica e uma privada, sendo a privada como se fosse uma senha
+    A geração das chaves SSH são feitas basicamente seguindo a documentação disponibilizada pelo GitHub em: https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows
+    Senha da ssh de teste: chobalol
+    deu merda na criação do agente, deixa isso aq pra local
+
+    
